@@ -24,7 +24,7 @@ siscor_flow.storage = GCS(constants.GCS_FLOWS_BUCKET.value)
 siscor_flow.run_config = KubernetesRun(
     image=constants.DOCKER_IMAGE.value,
     labels=[
-        constants.RJ_CVL_AGENT_LABEL.value,
+        constants.RJ_SECONSERVA_AGENT_LABEL.value,
     ],
 )
 
@@ -33,12 +33,12 @@ siscor_default_parameters = {
     "db_host": "10.70.11.61",
     "db_port": "1433",
     "db_type": "sql_server",
-    "vault_secret_path": "db_siscor",
+    "infisical_secret_path": "/db-siscor", #lembrar
+    "materialization_mode": "prod",
+    "materialize_to_datario": False,
     "dataset_id": "infraestrutura_siscor_obras",
 }
 
 siscor_flow = set_default_parameters(siscor_flow, default_parameters=siscor_default_parameters)
 
 siscor_flow.schedule = siscor_update_schedule
-
-# comment to trigger github actions 4
