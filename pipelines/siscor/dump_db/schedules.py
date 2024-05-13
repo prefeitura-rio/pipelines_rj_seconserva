@@ -148,7 +148,7 @@ siscor_clocks = generate_dump_db_schedules(
     db_port="1433",
     db_type="sql_server",
     dataset_id="infraestrutura_siscor_obras",
-    vault_secret_path="db_siscor",
+    infisical_secret_path="/db-siscor",
     table_parameters=siscor_queries,
 )
 
