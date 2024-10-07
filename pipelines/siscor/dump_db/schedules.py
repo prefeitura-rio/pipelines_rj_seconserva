@@ -3,14 +3,14 @@
 Schedules for the database dump pipeline
 """
 
-from datetime import timedelta, datetime
+from datetime import datetime, timedelta
 
-from prefect.schedules import Schedule
 import pytz
-
-from pipelines.constants import constants
+from prefect.schedules import Schedule
 from prefeitura_rio.pipelines_utils.io import untuple_clocks as untuple
 from prefeitura_rio.pipelines_utils.prefect import generate_dump_db_schedules
+
+from pipelines.constants import constants
 
 #####################################
 #
