@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Database dumping flows for EGPWeb project.
+Database dumping flows for EGPWeb project..
 """
 
 from copy import deepcopy
@@ -33,7 +33,7 @@ siscor_default_parameters = {
     "db_host": "10.70.11.61",
     "db_port": "1433",
     "db_type": "sql_server",
-    "infisical_secret_path": "/db-siscor", #lembrar
+    "infisical_secret_path": "/db-siscor",  # lembrar
     "materialization_mode": "prod",
     "materialize_to_datario": False,
     "dataset_id": "infraestrutura_siscor_obras",
