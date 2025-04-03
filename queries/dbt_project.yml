@@ -20,7 +20,8 @@ models:
   +persist_docs:
     relation: true
     columns: true
-  queries:
-    example:
-      +materialized: view
-      +schema: example
+  rj_seconserva:
+    # Config indicated by + and applies to all files under models/example/
+    infraestrutura_siscor_obras:
+      +materialized: table
+      +schema: infraestrutura_siscor_obras
