@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Database dumping flows for EGPWeb project.
+Database dumping flows for EGPWeb project..
 """
 
 from copy import deepcopy
